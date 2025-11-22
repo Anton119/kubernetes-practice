@@ -1,18 +1,18 @@
 user:
-  admin: yes
+  admin: true
   name: John
   age: 25
   position: go-developer
   skills:
     skill_1:
-      name: sql
-      level: 3
-      description: |
+    - name: sql
+    - level: 3
+    - description: |
         2 years of experience in making complex sql requests 
     skill_2:
-      name: kafka
-      level: 2
-      description: |
+    - name: kafka
+    - level: 2
+    - description: |
         1 year of experience in making producers and consumers
   place_of_living:
     country: Poland
@@ -21,7 +21,7 @@ user:
     house: 78
     apartment: 21
   pets:
-    name: Lopik
-    breed: british 
-    canMeow: yes
+    - name: Lopik
+    - breed: british 
+    - canMeow: true
 
