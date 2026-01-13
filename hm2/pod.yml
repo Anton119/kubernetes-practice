@@ -4,10 +4,10 @@ metadata:
   name: conv-app-port
   labels: 
     components: frontend
-specs:  
+spec:  
   containers:
   - name: conv-app
-    image: antonlarichev/conv-app:latest
+    image: antonlarichev/conv-app:1.2
     imagePullPolicy: IfNotPresent 
     ports:
       - containerPort: 81
