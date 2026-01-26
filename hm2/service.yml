@@ -1,0 +1,14 @@
+# SERVICE consists of : 1) ClusterIp 2) NodePort 3) LoadBalancer 4) Ingress
+# I make NodePort
+apiVersion: v1
+kind: Service
+metadata: 
+  name: conv-app
+spec:
+  type: NodePort
+  ports:
+    - port: 3000
+      targetPort: 81 # порт от nodePort к поду (containers: 81)
+      nodePort: 31201 # порт от kube proxy к service (nodePort)
+  selector: 
+     components: frontend
